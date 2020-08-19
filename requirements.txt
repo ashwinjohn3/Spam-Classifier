@@ -5,5 +5,4 @@ numpy
 streamlit
 seaborn
 matplotlib
-string
 nltk
