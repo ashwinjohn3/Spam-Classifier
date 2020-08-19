@@ -5,7 +5,7 @@ import nltk.corpus
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.pipeline import Pipeline
 import joblib
-
+nltk.download('stopwords')
 st.title('Email Spam Classifier')
 punctuation = """!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
 @st.cache

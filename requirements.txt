@@ -6,4 +6,3 @@ streamlit
 seaborn
 matplotlib
 nltk
-nltk.download('stopwords')
