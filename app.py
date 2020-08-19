@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import string
 import nltk.corpus
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.pipeline import Pipeline
 import joblib
-
+nltk.download('stopwords')
 st.title('Email Spam Classifier')
+punctuation = """!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
 @st.cache
 def remove_punct_stopwords(message):
-    form_str = [char for char in message if char not in string.punctuation]
+    form_str = [char for char in message if char not in punctuation]
     form_str_join = ''.join(form_str)
     # including subject also in the stopwords list
     words_stop = nltk.corpus.stopwords.words('english')
