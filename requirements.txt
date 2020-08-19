@@ -5,4 +5,4 @@ numpy
 streamlit
 seaborn
 matplotlib
-nltk.corpus
+nltk
